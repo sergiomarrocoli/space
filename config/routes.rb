@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   root to: 'home#index'
+  resources :catalogue_objects, only: [:index]
 end
